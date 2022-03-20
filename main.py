@@ -21,7 +21,7 @@ def getWeather(key):
     return response.json()
 
 def getTimeEST():
-    tz = timezone("EST")
+    tz = timezone("US/Eastern")
     time = datetime.now(tz)
 
     return time
